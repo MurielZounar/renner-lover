@@ -9,6 +9,7 @@ from users.users import (
     update_user,
     user_exists,
 )
+from utils.password import encrypt
 
 
 def new_user():
@@ -17,7 +18,7 @@ def new_user():
     psw = input("Senha Renner: ")
 
     if not user_exists(email):
-        save_user(name, email, psw)
+        save_user(name, email, encrypt(psw))
         os.system("cls")
     else:
         os.system("cls")

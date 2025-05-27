@@ -14,7 +14,7 @@ def notify_user(cheaper_items, user_email):
             server.starttls()
             server.login(EMAIL_USER, EMAIL_PASSWORD)
 
-            subdject = "🛒 Carrinho Renner - ⚠️ Alerta de Redução de Preço ⚠️"
+            subdject = "💖 Renner Lover - ⚠️ Alerta de Redução de Preço ⚠️"
             message = get_html(cheaper_items)
 
             email_msg = MIMEMultipart()

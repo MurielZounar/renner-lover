@@ -1,6 +1,7 @@
 import logging
 from time import sleep
 
+from config.settings import SLEEP_TIME
 from items.item import (
     delete_item,
     get_item_prices,
@@ -9,7 +10,7 @@ from items.item import (
     save_item,
     update_item_price,
 )
-from renner.renner import get_cart_items
+from renner.renner import Driver
 from users.users import get_users
 from utils.email import notify_user
 
@@ -77,8 +78,8 @@ def main():
             for user in users:
                 cheaper_items = []
                 print(f"Verificando carrinho do usuário {user['name']}...")
-
-                renner_items = get_cart_items(user["email"], user["psw"])
+                driver = Driver(user["email"], user["psw"])
+                renner_items = driver.get_cart_items()
 
                 if renner_items:
                     for item in renner_items:
@@ -93,7 +94,7 @@ def main():
 
                 print("Fim da análise.")
                 print("*" * 100)
-        sleep(3600)
+        sleep(SLEEP_TIME)
 
 
 if __name__ == "__main__":

@@ -26,4 +26,4 @@ ALLOWED_FIELDS = {
     "product_link",
     "product_image",
 }
-SLEEP_TIME = 10
+SLEEP_TIME = 3600

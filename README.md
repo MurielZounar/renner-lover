@@ -1,10 +1,8 @@
 
 # 💖 Renner Lover — Monitoramento de Descontos Automático
 
-🇧🇷 **PT | Português** | 🇺🇸 **EN | English**
-
 <details>
-<summary>🇧🇷</summary>
+<summary>🇧🇷 - Clique aqui para ler em Português</summary>
 
 <br>
 
@@ -155,7 +153,7 @@ Aqui estão algumas ideias e melhorias que estão no radar para as próximas ver
 </details>
 
 <details>
-<summary>🇺🇸</summary>
+<summary>🇺🇸 - Click here to read in English</summary>
 
 <br>
 

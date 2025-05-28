@@ -1,5 +1,5 @@
 
-# 💖 Renner Lover — Monitoramento de Descontos Automático
+# 💖 Renner Lover
 
 <details>
 <summary>🇧🇷 - Clique aqui para ler em Português</summary>
